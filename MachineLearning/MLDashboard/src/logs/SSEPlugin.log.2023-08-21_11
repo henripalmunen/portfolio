@@ -1,0 +1,887 @@
+2023-08-21 10:39:22,931 - INFO - __main__ : 46 - Logging enabled
+2023-08-21 10:39:22,942 - INFO - __main__ : 450 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 10:39:23,079 - INFO - __main__ : 383 - ExecuteFunction (functionId: 3)
+2023-08-21 10:40:06,245 - INFO - __main__ : 46 - Logging enabled
+2023-08-21 10:40:06,257 - INFO - __main__ : 450 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 10:40:06,718 - INFO - __main__ : 383 - ExecuteFunction (functionId: 3)
+2023-08-21 10:41:20,824 - INFO - __main__ : 46 - Logging enabled
+2023-08-21 10:41:20,831 - INFO - __main__ : 451 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 10:41:42,813 - INFO - __main__ : 342 - GetCapabilities
+2023-08-21 10:41:42,814 - INFO - __main__ : 367 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-21 10:41:42,814 - INFO - __main__ : 367 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-21 10:41:42,815 - INFO - __main__ : 367 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-21 10:41:42,815 - INFO - __main__ : 367 - Adding to capabilities: RandomForest(['col1'])
+2023-08-21 10:41:43,501 - INFO - __main__ : 384 - ExecuteFunction (functionId: 3)
+2023-08-21 10:41:43,946 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 10:41:43,954 - INFO - __main__ : 384 - ExecuteFunction (functionId: 3)
+2023-08-21 10:41:44,011 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 10:41:44,035 - INFO - __main__ : 384 - ExecuteFunction (functionId: 3)
+2023-08-21 10:41:44,096 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 10:41:44,098 - INFO - __main__ : 384 - ExecuteFunction (functionId: 3)
+2023-08-21 10:41:44,161 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 10:41:44,168 - INFO - __main__ : 384 - ExecuteFunction (functionId: 3)
+2023-08-21 10:41:44,241 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 10:41:44,244 - INFO - __main__ : 384 - ExecuteFunction (functionId: 3)
+2023-08-21 10:41:44,311 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 10:45:59,639 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 10:45:59,647 - INFO - __main__ : 453 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 10:45:59,816 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 10:45:59,955 - ERROR - _server : 471 - Exception iterating responses: 'torch.Size' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    indices = torch.tensor(range(xb_cat.size()))
+TypeError: 'torch.Size' object cannot be interpreted as an integer
+2023-08-21 10:45:59,962 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 10:46:00,029 - ERROR - _server : 471 - Exception iterating responses: 'torch.Size' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    indices = torch.tensor(range(xb_cat.size()))
+TypeError: 'torch.Size' object cannot be interpreted as an integer
+2023-08-21 10:46:00,035 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 10:46:00,147 - ERROR - _server : 471 - Exception iterating responses: 'torch.Size' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    indices = torch.tensor(range(xb_cat.size()))
+TypeError: 'torch.Size' object cannot be interpreted as an integer
+2023-08-21 10:46:00,152 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 10:46:00,268 - ERROR - _server : 471 - Exception iterating responses: 'torch.Size' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    indices = torch.tensor(range(xb_cat.size()))
+TypeError: 'torch.Size' object cannot be interpreted as an integer
+2023-08-21 10:46:46,261 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 10:46:46,268 - INFO - __main__ : 453 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 10:46:46,639 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 10:46:47,174 - ERROR - _server : 471 - Exception iterating responses: Tensors must have same number of dimensions: got 1 and 2
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 197, in _random_forest
+    xb = torch.cat((indices, xb_cat, xb_cont), -1)
+RuntimeError: Tensors must have same number of dimensions: got 1 and 2
+2023-08-21 10:46:47,177 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 10:46:47,286 - ERROR - _server : 471 - Exception iterating responses: Tensors must have same number of dimensions: got 1 and 2
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 197, in _random_forest
+    xb = torch.cat((indices, xb_cat, xb_cont), -1)
+RuntimeError: Tensors must have same number of dimensions: got 1 and 2
+2023-08-21 10:46:47,407 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 10:46:47,556 - ERROR - _server : 471 - Exception iterating responses: Tensors must have same number of dimensions: got 1 and 2
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 197, in _random_forest
+    xb = torch.cat((indices, xb_cat, xb_cont), -1)
+RuntimeError: Tensors must have same number of dimensions: got 1 and 2
+2023-08-21 10:46:47,565 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 10:46:47,674 - ERROR - _server : 471 - Exception iterating responses: Tensors must have same number of dimensions: got 1 and 2
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 197, in _random_forest
+    xb = torch.cat((indices, xb_cat, xb_cont), -1)
+RuntimeError: Tensors must have same number of dimensions: got 1 and 2
+2023-08-21 11:06:31,030 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:06:31,039 - INFO - __main__ : 453 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:06:31,284 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 11:06:31,461 - ERROR - _server : 471 - Exception iterating responses: expected Tensor as element 0 in argument 0, but got builtin_function_or_method
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    xb = torch.column_stack((xb_cat.indices, xb_cat, xb_cont))
+TypeError: expected Tensor as element 0 in argument 0, but got builtin_function_or_method
+2023-08-21 11:06:31,469 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 11:06:31,569 - ERROR - _server : 471 - Exception iterating responses: expected Tensor as element 0 in argument 0, but got builtin_function_or_method
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    xb = torch.column_stack((xb_cat.indices, xb_cat, xb_cont))
+TypeError: expected Tensor as element 0 in argument 0, but got builtin_function_or_method
+2023-08-21 11:06:31,572 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 11:06:31,694 - ERROR - _server : 471 - Exception iterating responses: expected Tensor as element 0 in argument 0, but got builtin_function_or_method
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    xb = torch.column_stack((xb_cat.indices, xb_cat, xb_cont))
+TypeError: expected Tensor as element 0 in argument 0, but got builtin_function_or_method
+2023-08-21 11:06:31,697 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 11:06:31,791 - ERROR - _server : 471 - Exception iterating responses: expected Tensor as element 0 in argument 0, but got builtin_function_or_method
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    xb = torch.column_stack((xb_cat.indices, xb_cat, xb_cont))
+TypeError: expected Tensor as element 0 in argument 0, but got builtin_function_or_method
+2023-08-21 11:06:49,301 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:06:49,307 - INFO - __main__ : 453 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:06:49,784 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 11:06:50,360 - ERROR - _server : 471 - Exception iterating responses: indices expected sparse coordinate tensor layout but got Strided
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    xb = torch.column_stack((xb_cat.indices(), xb_cat, xb_cont))
+RuntimeError: indices expected sparse coordinate tensor layout but got Strided
+2023-08-21 11:06:50,363 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 11:06:50,411 - ERROR - _server : 471 - Exception iterating responses: indices expected sparse coordinate tensor layout but got Strided
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    xb = torch.column_stack((xb_cat.indices(), xb_cat, xb_cont))
+RuntimeError: indices expected sparse coordinate tensor layout but got Strided
+2023-08-21 11:06:50,413 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 11:06:50,471 - ERROR - _server : 471 - Exception iterating responses: indices expected sparse coordinate tensor layout but got Strided
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    xb = torch.column_stack((xb_cat.indices(), xb_cat, xb_cont))
+RuntimeError: indices expected sparse coordinate tensor layout but got Strided
+2023-08-21 11:06:50,478 - INFO - __main__ : 386 - ExecuteFunction (functionId: 3)
+2023-08-21 11:06:50,580 - ERROR - _server : 471 - Exception iterating responses: indices expected sparse coordinate tensor layout but got Strided
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 196, in _random_forest
+    xb = torch.column_stack((xb_cat.indices(), xb_cat, xb_cont))
+RuntimeError: indices expected sparse coordinate tensor layout but got Strided
+2023-08-21 11:10:10,100 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:10:10,108 - INFO - __main__ : 454 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:10:10,511 - INFO - __main__ : 387 - ExecuteFunction (functionId: 3)
+2023-08-21 11:10:11,460 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 200, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:10:11,477 - INFO - __main__ : 387 - ExecuteFunction (functionId: 3)
+2023-08-21 11:10:11,631 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 200, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:10:11,641 - INFO - __main__ : 387 - ExecuteFunction (functionId: 3)
+2023-08-21 11:10:11,747 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 200, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:10:11,751 - INFO - __main__ : 387 - ExecuteFunction (functionId: 3)
+2023-08-21 11:10:11,885 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 200, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:10:50,214 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:10:50,226 - INFO - __main__ : 454 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:10:50,573 - INFO - __main__ : 387 - ExecuteFunction (functionId: 3)
+2023-08-21 11:10:51,511 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 200, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:10:51,518 - INFO - __main__ : 387 - ExecuteFunction (functionId: 3)
+2023-08-21 11:10:51,642 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 200, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:10:51,646 - INFO - __main__ : 387 - ExecuteFunction (functionId: 3)
+2023-08-21 11:10:51,801 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 200, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:10:51,805 - INFO - __main__ : 387 - ExecuteFunction (functionId: 3)
+2023-08-21 11:10:51,901 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 200, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:11:34,789 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:11:34,809 - INFO - __main__ : 455 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:11:35,094 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:11:35,099 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:11:36,067 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 201, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:11:36,076 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:11:36,190 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 201, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:11:36,193 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:11:36,303 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 201, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:11:36,307 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:11:36,427 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 201, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:12:10,945 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:12:10,951 - INFO - __main__ : 455 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:12:11,184 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:12:11,669 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 201, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:12:11,675 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:12:11,792 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 201, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:12:11,796 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:12:11,885 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 201, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:12:11,887 - INFO - __main__ : 388 - ExecuteFunction (functionId: 3)
+2023-08-21 11:12:11,961 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 201, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:14:27,232 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:14:27,238 - INFO - __main__ : 456 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:14:27,250 - INFO - __main__ : 389 - ExecuteFunction (functionId: 3)
+2023-08-21 11:14:27,681 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 202, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:14:27,687 - INFO - __main__ : 389 - ExecuteFunction (functionId: 3)
+2023-08-21 11:14:27,800 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 202, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:14:27,805 - INFO - __main__ : 389 - ExecuteFunction (functionId: 3)
+2023-08-21 11:14:27,954 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 202, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:14:27,956 - INFO - __main__ : 389 - ExecuteFunction (functionId: 3)
+2023-08-21 11:14:28,097 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 202, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:15:34,376 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:15:34,383 - INFO - __main__ : 456 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:15:34,743 - INFO - __main__ : 389 - ExecuteFunction (functionId: 3)
+2023-08-21 11:15:35,261 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 202, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:15:35,267 - INFO - __main__ : 389 - ExecuteFunction (functionId: 3)
+2023-08-21 11:15:35,337 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 202, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:15:35,339 - INFO - __main__ : 389 - ExecuteFunction (functionId: 3)
+2023-08-21 11:15:35,402 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 202, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:15:35,404 - INFO - __main__ : 389 - ExecuteFunction (functionId: 3)
+2023-08-21 11:15:35,478 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 202, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:17:11,074 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:17:11,081 - INFO - __main__ : 459 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:17:11,303 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:11,451 - ERROR - _server : 471 - Exception iterating responses: column_stack() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 203, in _random_forest
+    xb, yb = get_xb_yb()
+  File "__main__.py", line 199, in get_xb_yb
+    print(torch.column_stack(test1, test2))
+TypeError: column_stack() takes 1 positional argument but 2 were given
+2023-08-21 11:17:11,453 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:11,590 - ERROR - _server : 471 - Exception iterating responses: column_stack() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 203, in _random_forest
+    xb, yb = get_xb_yb()
+  File "__main__.py", line 199, in get_xb_yb
+    print(torch.column_stack(test1, test2))
+TypeError: column_stack() takes 1 positional argument but 2 were given
+2023-08-21 11:17:11,593 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:11,697 - ERROR - _server : 471 - Exception iterating responses: column_stack() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 203, in _random_forest
+    xb, yb = get_xb_yb()
+  File "__main__.py", line 199, in get_xb_yb
+    print(torch.column_stack(test1, test2))
+TypeError: column_stack() takes 1 positional argument but 2 were given
+2023-08-21 11:17:11,699 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:11,812 - ERROR - _server : 471 - Exception iterating responses: column_stack() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 203, in _random_forest
+    xb, yb = get_xb_yb()
+  File "__main__.py", line 199, in get_xb_yb
+    print(torch.column_stack(test1, test2))
+TypeError: column_stack() takes 1 positional argument but 2 were given
+2023-08-21 11:17:36,352 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 11:17:36,367 - INFO - __main__ : 459 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 11:17:36,544 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:36,548 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:37,450 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 205, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:17:37,459 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:37,610 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 205, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:17:37,613 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:37,774 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 205, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+2023-08-21 11:17:37,777 - INFO - __main__ : 392 - ExecuteFunction (functionId: 3)
+2023-08-21 11:17:37,912 - ERROR - _server : 471 - Exception iterating responses: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 205, in _random_forest
+    init_loss = learn.loss_func(learn.model(xb), yb)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in forward
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\model.py", line 67, in <listcomp>
+    x = [e(x_cat[:,i]) for i,e in enumerate(self.embeds)]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)

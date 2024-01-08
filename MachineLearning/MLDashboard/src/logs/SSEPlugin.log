@@ -1,0 +1,243 @@
+2023-08-21 15:27:54,320 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 15:27:54,328 - INFO - __main__ : 375 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:27:58,570 - INFO - __main__ : 266 - GetCapabilities
+2023-08-21 15:27:58,612 - INFO - __main__ : 291 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-21 15:27:58,613 - INFO - __main__ : 291 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-21 15:27:58,613 - INFO - __main__ : 291 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-21 15:27:58,616 - INFO - __main__ : 291 - Adding to capabilities: RandomForest(['col1'])
+2023-08-21 15:28:06,052 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:28:10,038 - ERROR - _server : 471 - Exception iterating responses: __init__() missing 1 required positional argument: 'losses'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 171, in _random_forest
+    confusion_matrix = ClassificationInterpretation(learn=learn, dl=dls).confusion_matrix
+TypeError: __init__() missing 1 required positional argument: 'losses'
+2023-08-21 15:28:10,048 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:28:13,338 - ERROR - _server : 471 - Exception iterating responses: __init__() missing 1 required positional argument: 'losses'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 171, in _random_forest
+    confusion_matrix = ClassificationInterpretation(learn=learn, dl=dls).confusion_matrix
+TypeError: __init__() missing 1 required positional argument: 'losses'
+2023-08-21 15:28:13,383 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:28:13,504 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:28:15,206 - ERROR - _server : 471 - Exception iterating responses: __init__() missing 1 required positional argument: 'losses'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 171, in _random_forest
+    confusion_matrix = ClassificationInterpretation(learn=learn, dl=dls).confusion_matrix
+TypeError: __init__() missing 1 required positional argument: 'losses'
+2023-08-21 15:28:15,208 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:28:18,497 - ERROR - _server : 471 - Exception iterating responses: __init__() missing 1 required positional argument: 'losses'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 171, in _random_forest
+    confusion_matrix = ClassificationInterpretation(learn=learn, dl=dls).confusion_matrix
+TypeError: __init__() missing 1 required positional argument: 'losses'
+2023-08-21 15:28:18,910 - ERROR - _server : 471 - Exception iterating responses: __init__() missing 1 required positional argument: 'losses'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 171, in _random_forest
+    confusion_matrix = ClassificationInterpretation(learn=learn, dl=dls).confusion_matrix
+TypeError: __init__() missing 1 required positional argument: 'losses'
+2023-08-21 15:28:18,912 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:28:20,241 - ERROR - _server : 471 - Exception iterating responses: __init__() missing 1 required positional argument: 'losses'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 171, in _random_forest
+    confusion_matrix = ClassificationInterpretation(learn=learn, dl=dls).confusion_matrix
+TypeError: __init__() missing 1 required positional argument: 'losses'
+2023-08-21 15:28:20,243 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:28:21,618 - ERROR - _server : 471 - Exception iterating responses: __init__() missing 1 required positional argument: 'losses'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 171, in _random_forest
+    confusion_matrix = ClassificationInterpretation(learn=learn, dl=dls).confusion_matrix
+TypeError: __init__() missing 1 required positional argument: 'losses'
+2023-08-21 15:30:50,408 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 15:30:50,415 - INFO - __main__ : 375 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:30:50,771 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:31:21,729 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 15:31:21,735 - INFO - __main__ : 375 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:31:22,020 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:31:44,924 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 15:31:44,931 - INFO - __main__ : 375 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:31:44,980 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-21 15:34:47,189 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 15:34:47,195 - INFO - __main__ : 378 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:34:47,355 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-21 15:34:48,602 - ERROR - _server : 471 - Exception iterating responses: name 'get_confusion_matrix' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 174, in _random_forest
+    confusion_matrix = get_confusion_matrix(learn)
+NameError: name 'get_confusion_matrix' is not defined
+2023-08-21 15:34:48,606 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-21 15:34:49,980 - ERROR - _server : 471 - Exception iterating responses: name 'get_confusion_matrix' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 174, in _random_forest
+    confusion_matrix = get_confusion_matrix(learn)
+NameError: name 'get_confusion_matrix' is not defined
+2023-08-21 15:34:49,982 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-21 15:34:51,491 - ERROR - _server : 471 - Exception iterating responses: name 'get_confusion_matrix' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 174, in _random_forest
+    confusion_matrix = get_confusion_matrix(learn)
+NameError: name 'get_confusion_matrix' is not defined
+2023-08-21 15:34:51,493 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-21 15:34:53,225 - ERROR - _server : 471 - Exception iterating responses: name 'get_confusion_matrix' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 174, in _random_forest
+    confusion_matrix = get_confusion_matrix(learn)
+NameError: name 'get_confusion_matrix' is not defined
+2023-08-21 15:35:34,851 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 15:35:34,867 - INFO - __main__ : 379 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:35:34,910 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-21 15:35:37,101 - ERROR - _server : 471 - Exception iterating responses: name 'get_confusion_matrix' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix(learn)
+NameError: name 'get_confusion_matrix' is not defined
+2023-08-21 15:35:37,104 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-21 15:35:38,455 - ERROR - _server : 471 - Exception iterating responses: name 'get_confusion_matrix' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix(learn)
+NameError: name 'get_confusion_matrix' is not defined
+2023-08-21 15:35:38,457 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-21 15:35:40,046 - ERROR - _server : 471 - Exception iterating responses: name 'get_confusion_matrix' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix(learn)
+NameError: name 'get_confusion_matrix' is not defined
+2023-08-21 15:35:40,047 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-21 15:35:41,438 - ERROR - _server : 471 - Exception iterating responses: name 'get_confusion_matrix' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix(learn)
+NameError: name 'get_confusion_matrix' is not defined
+2023-08-21 15:47:48,701 - INFO - __main__ : 47 - Logging enabled
+2023-08-21 15:47:48,716 - INFO - __main__ : 379 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:47:49,058 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-21 15:47:49,060 - ERROR - _server : 453 - Exception calling application: _random_forest() missing 1 required positional argument: 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "__main__.py", line 314, in ExecuteFunction
+    return getattr(self, self.functions[func_id])(request_iterator, context)
+TypeError: _random_forest() missing 1 required positional argument: 'context'
+2023-08-21 15:47:49,069 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-21 15:47:49,070 - ERROR - _server : 453 - Exception calling application: _random_forest() missing 1 required positional argument: 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "__main__.py", line 314, in ExecuteFunction
+    return getattr(self, self.functions[func_id])(request_iterator, context)
+TypeError: _random_forest() missing 1 required positional argument: 'context'
+2023-08-21 15:47:49,077 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-21 15:47:49,081 - ERROR - _server : 453 - Exception calling application: _random_forest() missing 1 required positional argument: 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "__main__.py", line 314, in ExecuteFunction
+    return getattr(self, self.functions[func_id])(request_iterator, context)
+TypeError: _random_forest() missing 1 required positional argument: 'context'
+2023-08-21 15:47:49,086 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-21 15:47:49,087 - ERROR - _server : 453 - Exception calling application: _random_forest() missing 1 required positional argument: 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "__main__.py", line 314, in ExecuteFunction
+    return getattr(self, self.functions[func_id])(request_iterator, context)
+TypeError: _random_forest() missing 1 required positional argument: 'context'
+2023-08-21 15:49:05,408 - INFO - __main__ : 50 - Logging enabled
+2023-08-21 15:49:05,424 - INFO - __main__ : 380 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:49:05,825 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-21 15:49:09,859 - ERROR - _server : 471 - Exception iterating responses: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix()
+TypeError: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+2023-08-21 15:49:09,865 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-21 15:49:12,875 - ERROR - _server : 471 - Exception iterating responses: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix()
+TypeError: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+2023-08-21 15:49:12,879 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-21 15:49:15,898 - ERROR - _server : 471 - Exception iterating responses: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix()
+TypeError: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+2023-08-21 15:49:15,899 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-21 15:49:17,123 - ERROR - _server : 471 - Exception iterating responses: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix()
+TypeError: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+2023-08-21 15:49:19,182 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-21 15:49:20,363 - ERROR - _server : 471 - Exception iterating responses: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix()
+TypeError: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+2023-08-21 15:49:20,364 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-21 15:49:21,815 - ERROR - _server : 471 - Exception iterating responses: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix()
+TypeError: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+2023-08-21 15:49:21,817 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-21 15:49:23,077 - ERROR - _server : 471 - Exception iterating responses: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix()
+TypeError: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+2023-08-21 15:49:23,078 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-21 15:49:24,297 - ERROR - _server : 471 - Exception iterating responses: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 175, in _random_forest
+    confusion_matrix = get_confusion_matrix()
+TypeError: get_confusion_matrix() missing 3 required positional arguments: 'self', 'learner', and 'context'
+2023-08-21 15:49:53,702 - INFO - __main__ : 50 - Logging enabled
+2023-08-21 15:49:53,709 - INFO - __main__ : 380 - *** Running server in insecure mode on port: 50052 ***
+2023-08-21 15:49:53,939 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)

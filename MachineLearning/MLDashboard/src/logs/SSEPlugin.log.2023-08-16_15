@@ -1,0 +1,851 @@
+2023-08-16 13:34:05,896 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 13:34:05,896 - INFO - __main__ : 361 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 13:34:06,309 - INFO - __main__ : 252 - GetCapabilities
+2023-08-16 13:34:06,316 - INFO - __main__ : 277 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 13:34:06,316 - INFO - __main__ : 277 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 13:34:06,316 - INFO - __main__ : 277 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 13:34:06,316 - INFO - __main__ : 277 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 13:35:11,708 - INFO - __main__ : 294 - ExecuteFunction (functionId: 3)
+2023-08-16 13:42:03,861 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 13:42:03,865 - INFO - __main__ : 363 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 13:42:04,321 - INFO - __main__ : 254 - GetCapabilities
+2023-08-16 13:42:04,323 - INFO - __main__ : 279 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 13:42:04,325 - INFO - __main__ : 279 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 13:42:04,327 - INFO - __main__ : 279 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 13:42:04,328 - INFO - __main__ : 279 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 13:42:05,893 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:45:18,332 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:48:34,392 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 13:48:34,396 - INFO - __main__ : 363 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 13:48:34,781 - INFO - __main__ : 254 - GetCapabilities
+2023-08-16 13:48:34,783 - INFO - __main__ : 279 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 13:48:34,784 - INFO - __main__ : 279 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 13:48:34,785 - INFO - __main__ : 279 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 13:48:34,786 - INFO - __main__ : 279 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 13:48:36,715 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:48:36,739 - ERROR - _server : 471 - Exception iterating responses: [] has type list, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 161, in _random_forest
+    yield SSE.BundledRows(rows=[SSE.Row(duals=iter([SSE.Dual(strData=cat_features)]))])
+TypeError: [] has type list, but expected one of: bytes, unicode
+2023-08-16 13:48:36,741 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:48:36,747 - ERROR - _server : 471 - Exception iterating responses: [] has type list, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 161, in _random_forest
+    yield SSE.BundledRows(rows=[SSE.Row(duals=iter([SSE.Dual(strData=cat_features)]))])
+TypeError: [] has type list, but expected one of: bytes, unicode
+2023-08-16 13:48:36,749 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:48:36,764 - ERROR - _server : 471 - Exception iterating responses: [] has type list, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 161, in _random_forest
+    yield SSE.BundledRows(rows=[SSE.Row(duals=iter([SSE.Dual(strData=cat_features)]))])
+TypeError: [] has type list, but expected one of: bytes, unicode
+2023-08-16 13:48:36,765 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:48:36,778 - ERROR - _server : 471 - Exception iterating responses: [] has type list, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 161, in _random_forest
+    yield SSE.BundledRows(rows=[SSE.Row(duals=iter([SSE.Dual(strData=cat_features)]))])
+TypeError: [] has type list, but expected one of: bytes, unicode
+2023-08-16 13:48:59,584 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 13:48:59,589 - INFO - __main__ : 363 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 13:48:59,615 - INFO - __main__ : 254 - GetCapabilities
+2023-08-16 13:48:59,616 - INFO - __main__ : 279 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 13:48:59,616 - INFO - __main__ : 279 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 13:48:59,617 - INFO - __main__ : 279 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 13:48:59,617 - INFO - __main__ : 279 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 13:49:01,250 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:49:27,544 - INFO - __main__ : 296 - ExecuteFunction (functionId: 1)
+2023-08-16 13:52:11,183 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:53:09,584 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 13:53:09,584 - INFO - __main__ : 363 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 13:53:10,022 - INFO - __main__ : 254 - GetCapabilities
+2023-08-16 13:53:10,022 - INFO - __main__ : 279 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 13:53:10,022 - INFO - __main__ : 279 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 13:53:10,022 - INFO - __main__ : 279 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 13:53:10,022 - INFO - __main__ : 279 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 13:53:11,643 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:26,334 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 13:57:26,334 - INFO - __main__ : 363 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 13:57:26,443 - INFO - __main__ : 254 - GetCapabilities
+2023-08-16 13:57:26,443 - INFO - __main__ : 279 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 13:57:26,443 - INFO - __main__ : 279 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 13:57:26,443 - INFO - __main__ : 279 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 13:57:26,443 - INFO - __main__ : 279 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 13:57:44,635 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:44,650 - ERROR - _server : 471 - Exception iterating responses: 0
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "__main__.py", line 131, in <listcomp>
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1202, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1153, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 3864, in xs
+    loc = index.get_loc(key)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-08-16 13:57:44,650 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:44,666 - ERROR - _server : 471 - Exception iterating responses: 0
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "__main__.py", line 131, in <listcomp>
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1202, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1153, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 3864, in xs
+    loc = index.get_loc(key)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-08-16 13:57:44,666 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:44,682 - ERROR - _server : 471 - Exception iterating responses: 0
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "__main__.py", line 131, in <listcomp>
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1202, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1153, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 3864, in xs
+    loc = index.get_loc(key)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-08-16 13:57:44,697 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:44,713 - ERROR - _server : 471 - Exception iterating responses: 0
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "__main__.py", line 131, in <listcomp>
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1202, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1153, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 3864, in xs
+    loc = index.get_loc(key)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-08-16 13:57:44,728 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:44,744 - ERROR - _server : 471 - Exception iterating responses: 0
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "__main__.py", line 131, in <listcomp>
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1202, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1153, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 3864, in xs
+    loc = index.get_loc(key)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-08-16 13:57:44,744 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:44,759 - ERROR - _server : 471 - Exception iterating responses: 0
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "__main__.py", line 131, in <listcomp>
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1202, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1153, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 3864, in xs
+    loc = index.get_loc(key)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-08-16 13:57:44,791 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:44,822 - ERROR - _server : 471 - Exception iterating responses: 0
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "__main__.py", line 131, in <listcomp>
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1202, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1153, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 3864, in xs
+    loc = index.get_loc(key)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-08-16 13:57:44,822 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 13:57:44,838 - ERROR - _server : 471 - Exception iterating responses: 0
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "__main__.py", line 131, in <listcomp>
+    print([categoricalCSV.loc[row_index].loc[0] for row_index in range(len(categoricalCSV))])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1202, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexing.py", line 1153, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 3864, in xs
+    loc = index.get_loc(key)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-08-16 13:59:47,936 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 13:59:47,952 - INFO - __main__ : 363 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 13:59:49,440 - INFO - __main__ : 254 - GetCapabilities
+2023-08-16 13:59:49,440 - INFO - __main__ : 279 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 13:59:49,440 - INFO - __main__ : 279 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 13:59:49,440 - INFO - __main__ : 279 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 13:59:49,440 - INFO - __main__ : 279 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 13:59:52,094 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 14:00:11,291 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:00:11,306 - INFO - __main__ : 363 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:00:11,431 - INFO - __main__ : 254 - GetCapabilities
+2023-08-16 14:00:11,431 - INFO - __main__ : 279 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:00:11,431 - INFO - __main__ : 279 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:00:11,431 - INFO - __main__ : 279 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:00:11,431 - INFO - __main__ : 279 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:00:14,605 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 14:08:12,065 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:08:12,071 - INFO - __main__ : 363 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:08:12,386 - INFO - __main__ : 254 - GetCapabilities
+2023-08-16 14:08:12,386 - INFO - __main__ : 279 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:08:12,386 - INFO - __main__ : 279 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:08:12,386 - INFO - __main__ : 279 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:08:12,394 - INFO - __main__ : 279 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:08:18,050 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 14:09:00,574 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 14:09:22,623 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 14:09:57,374 - INFO - __main__ : 296 - ExecuteFunction (functionId: 3)
+2023-08-16 14:14:15,274 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:14:15,285 - INFO - __main__ : 366 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:14:15,686 - INFO - __main__ : 257 - GetCapabilities
+2023-08-16 14:14:15,686 - INFO - __main__ : 282 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:14:15,693 - INFO - __main__ : 282 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:14:15,695 - INFO - __main__ : 282 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:14:15,695 - INFO - __main__ : 282 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:14:24,173 - INFO - __main__ : 299 - ExecuteFunction (functionId: 3)
+2023-08-16 14:16:47,515 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:16:47,524 - INFO - __main__ : 369 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:16:47,974 - INFO - __main__ : 260 - GetCapabilities
+2023-08-16 14:16:47,974 - INFO - __main__ : 285 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:16:47,974 - INFO - __main__ : 285 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:16:47,983 - INFO - __main__ : 285 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:16:47,986 - INFO - __main__ : 285 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:16:50,372 - INFO - __main__ : 302 - ExecuteFunction (functionId: 3)
+2023-08-16 14:19:01,084 - INFO - __main__ : 302 - ExecuteFunction (functionId: 3)
+2023-08-16 14:19:20,370 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:19:20,374 - INFO - __main__ : 369 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:19:20,765 - INFO - __main__ : 260 - GetCapabilities
+2023-08-16 14:19:20,771 - INFO - __main__ : 285 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:19:20,774 - INFO - __main__ : 285 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:19:20,775 - INFO - __main__ : 285 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:19:20,776 - INFO - __main__ : 285 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:19:22,533 - INFO - __main__ : 302 - ExecuteFunction (functionId: 3)
+2023-08-16 14:40:12,472 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:40:12,476 - INFO - __main__ : 375 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:40:12,907 - INFO - __main__ : 266 - GetCapabilities
+2023-08-16 14:40:12,908 - INFO - __main__ : 291 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:40:12,909 - INFO - __main__ : 291 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:40:12,910 - INFO - __main__ : 291 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:40:12,911 - INFO - __main__ : 291 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:40:14,652 - INFO - __main__ : 308 - ExecuteFunction (functionId: 3)
+2023-08-16 14:53:06,297 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:53:06,297 - INFO - __main__ : 372 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:53:06,521 - INFO - __main__ : 263 - GetCapabilities
+2023-08-16 14:53:06,521 - INFO - __main__ : 288 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:53:06,521 - INFO - __main__ : 288 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:53:06,521 - INFO - __main__ : 288 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:53:06,521 - INFO - __main__ : 288 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:53:08,707 - INFO - __main__ : 305 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:07,263 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:57:07,263 - INFO - __main__ : 377 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:57:07,530 - INFO - __main__ : 268 - GetCapabilities
+2023-08-16 14:57:07,530 - INFO - __main__ : 293 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:57:07,530 - INFO - __main__ : 293 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:57:07,530 - INFO - __main__ : 293 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:57:07,546 - INFO - __main__ : 293 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:57:13,749 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:13,903 - ERROR - _server : 471 - Exception iterating responses: For argument "inplace" expected type bool, received type function.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    test_df.drop(['Survived'], axis=1, inplace=true)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 4954, in drop
+    return super().drop(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 4249, in drop
+    inplace = validate_bool_kwarg(inplace, "inplace")
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_validators.py", line 251, in validate_bool_kwarg
+    raise ValueError(
+ValueError: For argument "inplace" expected type bool, received type function.
+2023-08-16 14:57:13,918 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:14,090 - ERROR - _server : 471 - Exception iterating responses: For argument "inplace" expected type bool, received type function.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    test_df.drop(['Survived'], axis=1, inplace=true)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 4954, in drop
+    return super().drop(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 4249, in drop
+    inplace = validate_bool_kwarg(inplace, "inplace")
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_validators.py", line 251, in validate_bool_kwarg
+    raise ValueError(
+ValueError: For argument "inplace" expected type bool, received type function.
+2023-08-16 14:57:14,090 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:14,246 - ERROR - _server : 471 - Exception iterating responses: For argument "inplace" expected type bool, received type function.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    test_df.drop(['Survived'], axis=1, inplace=true)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 4954, in drop
+    return super().drop(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 4249, in drop
+    inplace = validate_bool_kwarg(inplace, "inplace")
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_validators.py", line 251, in validate_bool_kwarg
+    raise ValueError(
+ValueError: For argument "inplace" expected type bool, received type function.
+2023-08-16 14:57:14,246 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:14,403 - ERROR - _server : 471 - Exception iterating responses: For argument "inplace" expected type bool, received type function.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    test_df.drop(['Survived'], axis=1, inplace=true)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 4954, in drop
+    return super().drop(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 4249, in drop
+    inplace = validate_bool_kwarg(inplace, "inplace")
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_validators.py", line 251, in validate_bool_kwarg
+    raise ValueError(
+ValueError: For argument "inplace" expected type bool, received type function.
+2023-08-16 14:57:14,403 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:14,574 - ERROR - _server : 471 - Exception iterating responses: For argument "inplace" expected type bool, received type function.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    test_df.drop(['Survived'], axis=1, inplace=true)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 4954, in drop
+    return super().drop(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 4249, in drop
+    inplace = validate_bool_kwarg(inplace, "inplace")
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_validators.py", line 251, in validate_bool_kwarg
+    raise ValueError(
+ValueError: For argument "inplace" expected type bool, received type function.
+2023-08-16 14:57:14,574 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:14,731 - ERROR - _server : 471 - Exception iterating responses: For argument "inplace" expected type bool, received type function.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    test_df.drop(['Survived'], axis=1, inplace=true)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 4954, in drop
+    return super().drop(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 4249, in drop
+    inplace = validate_bool_kwarg(inplace, "inplace")
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_validators.py", line 251, in validate_bool_kwarg
+    raise ValueError(
+ValueError: For argument "inplace" expected type bool, received type function.
+2023-08-16 14:57:14,746 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:14,919 - ERROR - _server : 471 - Exception iterating responses: For argument "inplace" expected type bool, received type function.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    test_df.drop(['Survived'], axis=1, inplace=true)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 4954, in drop
+    return super().drop(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 4249, in drop
+    inplace = validate_bool_kwarg(inplace, "inplace")
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_validators.py", line 251, in validate_bool_kwarg
+    raise ValueError(
+ValueError: For argument "inplace" expected type bool, received type function.
+2023-08-16 14:57:14,919 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:57:15,076 - ERROR - _server : 471 - Exception iterating responses: For argument "inplace" expected type bool, received type function.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    test_df.drop(['Survived'], axis=1, inplace=true)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 4954, in drop
+    return super().drop(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 4249, in drop
+    inplace = validate_bool_kwarg(inplace, "inplace")
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_validators.py", line 251, in validate_bool_kwarg
+    raise ValueError(
+ValueError: For argument "inplace" expected type bool, received type function.
+2023-08-16 14:58:00,783 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 14:58:00,799 - INFO - __main__ : 377 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 14:58:01,027 - INFO - __main__ : 268 - GetCapabilities
+2023-08-16 14:58:01,028 - INFO - __main__ : 293 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 14:58:01,029 - INFO - __main__ : 293 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 14:58:01,030 - INFO - __main__ : 293 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 14:58:01,030 - INFO - __main__ : 293 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 14:58:02,342 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:58:02,513 - ERROR - _server : 471 - Exception iterating responses: "['Survived'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 165, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 245, in encodes
+    def encodes(self, to): to.transform(to.cat_names, partial(_apply_cats, self.classes, 1))
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 203, in transform
+    if len(cols) > 0: self[cols] = self[cols].transform(f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\foundation.py", line 88, in __getitem__
+    def __getitem__(self, k): return self.items[list(k) if isinstance(k,CollBase) else k]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Survived'] not in index"
+2023-08-16 14:58:02,513 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:58:02,684 - ERROR - _server : 471 - Exception iterating responses: "['Survived'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 165, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 245, in encodes
+    def encodes(self, to): to.transform(to.cat_names, partial(_apply_cats, self.classes, 1))
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 203, in transform
+    if len(cols) > 0: self[cols] = self[cols].transform(f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\foundation.py", line 88, in __getitem__
+    def __getitem__(self, k): return self.items[list(k) if isinstance(k,CollBase) else k]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Survived'] not in index"
+2023-08-16 14:58:02,684 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:58:02,841 - ERROR - _server : 471 - Exception iterating responses: "['Survived'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 165, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 245, in encodes
+    def encodes(self, to): to.transform(to.cat_names, partial(_apply_cats, self.classes, 1))
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 203, in transform
+    if len(cols) > 0: self[cols] = self[cols].transform(f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\foundation.py", line 88, in __getitem__
+    def __getitem__(self, k): return self.items[list(k) if isinstance(k,CollBase) else k]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Survived'] not in index"
+2023-08-16 14:58:02,841 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:58:02,997 - ERROR - _server : 471 - Exception iterating responses: "['Survived'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 165, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 245, in encodes
+    def encodes(self, to): to.transform(to.cat_names, partial(_apply_cats, self.classes, 1))
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 203, in transform
+    if len(cols) > 0: self[cols] = self[cols].transform(f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\foundation.py", line 88, in __getitem__
+    def __getitem__(self, k): return self.items[list(k) if isinstance(k,CollBase) else k]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Survived'] not in index"
+2023-08-16 14:58:02,997 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:58:03,153 - ERROR - _server : 471 - Exception iterating responses: "['Survived'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 165, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 245, in encodes
+    def encodes(self, to): to.transform(to.cat_names, partial(_apply_cats, self.classes, 1))
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 203, in transform
+    if len(cols) > 0: self[cols] = self[cols].transform(f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\foundation.py", line 88, in __getitem__
+    def __getitem__(self, k): return self.items[list(k) if isinstance(k,CollBase) else k]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Survived'] not in index"
+2023-08-16 14:58:03,153 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:58:03,309 - ERROR - _server : 471 - Exception iterating responses: "['Survived'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 165, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 245, in encodes
+    def encodes(self, to): to.transform(to.cat_names, partial(_apply_cats, self.classes, 1))
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 203, in transform
+    if len(cols) > 0: self[cols] = self[cols].transform(f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\foundation.py", line 88, in __getitem__
+    def __getitem__(self, k): return self.items[list(k) if isinstance(k,CollBase) else k]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Survived'] not in index"
+2023-08-16 14:58:03,325 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:58:03,524 - ERROR - _server : 471 - Exception iterating responses: "['Survived'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 165, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 245, in encodes
+    def encodes(self, to): to.transform(to.cat_names, partial(_apply_cats, self.classes, 1))
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 203, in transform
+    if len(cols) > 0: self[cols] = self[cols].transform(f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\foundation.py", line 88, in __getitem__
+    def __getitem__(self, k): return self.items[list(k) if isinstance(k,CollBase) else k]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Survived'] not in index"
+2023-08-16 14:58:03,524 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-16 14:58:03,696 - ERROR - _server : 471 - Exception iterating responses: "['Survived'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 165, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 245, in encodes
+    def encodes(self, to): to.transform(to.cat_names, partial(_apply_cats, self.classes, 1))
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 203, in transform
+    if len(cols) > 0: self[cols] = self[cols].transform(f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\foundation.py", line 88, in __getitem__
+    def __getitem__(self, k): return self.items[list(k) if isinstance(k,CollBase) else k]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 5845, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Survived'] not in index"
+2023-08-16 15:04:10,530 - INFO - __main__ : 45 - Logging enabled
+2023-08-16 15:04:10,536 - INFO - __main__ : 377 - *** Running server in insecure mode on port: 50052 ***
+2023-08-16 15:04:10,806 - INFO - __main__ : 268 - GetCapabilities
+2023-08-16 15:04:10,806 - INFO - __main__ : 293 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-16 15:04:10,806 - INFO - __main__ : 293 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-16 15:04:10,806 - INFO - __main__ : 293 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-16 15:04:10,815 - INFO - __main__ : 293 - Adding to capabilities: RandomForest(['col1'])
+2023-08-16 15:04:12,548 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)

@@ -1,0 +1,13 @@
+{
+  "Functions": [
+    {
+      "Id": 0,
+      "Name": "TrainAndGetMetrics",
+      "Type": 1,
+      "ReturnType": 0,
+      "Params": {
+        "col1": 0
+      }
+    }
+  ]
+}

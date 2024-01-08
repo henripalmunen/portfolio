@@ -1,0 +1,2373 @@
+2023-08-17 13:18:54,705 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:18:54,769 - INFO - __main__ : 377 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:19:04,276 - INFO - __main__ : 268 - GetCapabilities
+2023-08-17 13:19:04,295 - INFO - __main__ : 293 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:19:04,295 - INFO - __main__ : 293 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:19:04,295 - INFO - __main__ : 293 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:19:04,295 - INFO - __main__ : 293 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:19:07,862 - INFO - __main__ : 268 - GetCapabilities
+2023-08-17 13:19:07,865 - INFO - __main__ : 293 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:19:07,865 - INFO - __main__ : 293 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:19:07,867 - INFO - __main__ : 293 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:19:07,867 - INFO - __main__ : 293 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:19:15,125 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:19:15,204 - ERROR - _server : 471 - Exception iterating responses: 'Survived'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Survived'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 147, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 254, in setups
+    self.vocab = CategoryMap(getattr(to, 'train', to).iloc[:,to.y_names[0]].items, strict=True)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Survived'
+2023-08-17 13:19:15,217 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:19:15,237 - ERROR - _server : 471 - Exception iterating responses: 'Survived'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Survived'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 147, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 254, in setups
+    self.vocab = CategoryMap(getattr(to, 'train', to).iloc[:,to.y_names[0]].items, strict=True)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Survived'
+2023-08-17 13:19:15,241 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:19:15,267 - ERROR - _server : 471 - Exception iterating responses: 'Survived'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Survived'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 147, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 254, in setups
+    self.vocab = CategoryMap(getattr(to, 'train', to).iloc[:,to.y_names[0]].items, strict=True)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Survived'
+2023-08-17 13:19:15,272 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:19:15,297 - ERROR - _server : 471 - Exception iterating responses: 'Survived'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Survived'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 147, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 254, in setups
+    self.vocab = CategoryMap(getattr(to, 'train', to).iloc[:,to.y_names[0]].items, strict=True)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Survived'
+2023-08-17 13:19:15,303 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:19:15,357 - ERROR - _server : 471 - Exception iterating responses: 'Survived'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Survived'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 147, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 254, in setups
+    self.vocab = CategoryMap(getattr(to, 'train', to).iloc[:,to.y_names[0]].items, strict=True)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Survived'
+2023-08-17 13:19:15,367 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:19:15,418 - ERROR - _server : 471 - Exception iterating responses: 'Survived'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Survived'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 147, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 254, in setups
+    self.vocab = CategoryMap(getattr(to, 'train', to).iloc[:,to.y_names[0]].items, strict=True)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Survived'
+2023-08-17 13:19:15,428 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:19:15,466 - ERROR - _server : 471 - Exception iterating responses: 'Survived'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Survived'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 147, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 254, in setups
+    self.vocab = CategoryMap(getattr(to, 'train', to).iloc[:,to.y_names[0]].items, strict=True)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Survived'
+2023-08-17 13:19:15,479 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:19:15,518 - ERROR - _server : 471 - Exception iterating responses: 'Survived'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Survived'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 147, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 254, in setups
+    self.vocab = CategoryMap(getattr(to, 'train', to).iloc[:,to.y_names[0]].items, strict=True)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Survived'
+2023-08-17 13:23:15,853 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:23:15,858 - INFO - __main__ : 377 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:23:15,869 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:15,926 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:15,964 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:16,024 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:16,034 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:16,090 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:16,098 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:16,147 - ERROR - _server : 471 - Exception iterating responses: nan values in `Embarked` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 226, in setup
+    return self(items.items if isinstance(items,Datasets) else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Embarked` but not in setup training set
+2023-08-17 13:23:16,163 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:16,226 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:16,235 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:16,293 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:16,300 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:16,349 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:16,357 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:16,398 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:31,756 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:23:31,764 - INFO - __main__ : 377 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:23:32,008 - INFO - __main__ : 268 - GetCapabilities
+2023-08-17 13:23:32,008 - INFO - __main__ : 293 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:23:32,008 - INFO - __main__ : 293 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:23:32,014 - INFO - __main__ : 293 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:23:32,015 - INFO - __main__ : 293 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:23:35,110 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,187 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,215 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,255 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,265 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,327 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,336 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,407 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,414 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,456 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,463 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,519 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,611 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,681 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,687 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,727 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,733 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,774 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,780 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,829 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,834 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,876 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,883 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,924 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,931 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:35,971 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:23:35,977 - INFO - __main__ : 310 - ExecuteFunction (functionId: 3)
+2023-08-17 13:23:36,019 - ERROR - _server : 471 - Exception iterating responses: 'Categorical' with dtype category does not support reduction 'median'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 148, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in setups
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 303, in <dictcomp>
+    store_attr(but='to', na_dict={n:self.fill_strategy(to[n], self.fill_vals[n])
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 290, in median
+    def median  (c,fill): return c.median()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 11187, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10699, in median
+    return self._stat_function(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 10639, in _stat_function
+    return self._reduce(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\series.py", line 4459, in _reduce
+    return delegate._reduce(name, skipna=skipna, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\arrays\base.py", line 1369, in _reduce
+    raise TypeError(
+TypeError: 'Categorical' with dtype category does not support reduction 'median'
+2023-08-17 13:27:26,714 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:27:26,720 - INFO - __main__ : 378 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:27:37,071 - INFO - __main__ : 269 - GetCapabilities
+2023-08-17 13:27:37,071 - INFO - __main__ : 294 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:27:37,072 - INFO - __main__ : 294 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:27:37,073 - INFO - __main__ : 294 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:27:37,073 - INFO - __main__ : 294 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:27:44,911 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:44,933 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:44,936 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:44,946 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:44,948 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:44,967 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:44,973 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:44,990 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:44,992 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,005 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,007 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,017 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,024 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,041 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,045 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,059 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,113 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,136 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,142 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,166 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,172 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,199 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,206 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,235 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,240 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,263 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,268 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,294 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,298 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,325 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:45,329 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:45,342 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:46,527 - INFO - __main__ : 269 - GetCapabilities
+2023-08-17 13:27:46,529 - INFO - __main__ : 294 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:27:46,533 - INFO - __main__ : 294 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:27:46,535 - INFO - __main__ : 294 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:27:46,536 - INFO - __main__ : 294 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:27:54,093 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:54,103 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:54,105 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:54,121 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:54,123 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:54,137 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:54,138 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:54,151 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:54,154 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:54,166 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:54,170 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:54,179 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:54,183 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:54,196 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:27:54,197 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:27:54,210 - ERROR - _server : 471 - Exception iterating responses: can only concatenate str (not "numpy.int32") to str
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 145, in _random_forest
+    print("Categorical length: " + categoricalCSV.size)
+TypeError: can only concatenate str (not "numpy.int32") to str
+2023-08-17 13:28:19,747 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:28:19,752 - INFO - __main__ : 378 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:28:19,760 - INFO - __main__ : 269 - GetCapabilities
+2023-08-17 13:28:19,761 - INFO - __main__ : 294 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:28:19,761 - INFO - __main__ : 294 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:28:19,762 - INFO - __main__ : 294 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:28:19,762 - INFO - __main__ : 294 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:28:22,201 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:32:19,376 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:32:19,393 - INFO - __main__ : 378 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:32:25,392 - INFO - __main__ : 269 - GetCapabilities
+2023-08-17 13:32:25,392 - INFO - __main__ : 294 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:32:25,393 - INFO - __main__ : 294 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:32:25,393 - INFO - __main__ : 294 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:32:25,393 - INFO - __main__ : 294 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:32:27,175 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:35:46,177 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:35:46,189 - INFO - __main__ : 378 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:35:50,129 - INFO - __main__ : 269 - GetCapabilities
+2023-08-17 13:35:50,130 - INFO - __main__ : 294 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:35:50,131 - INFO - __main__ : 294 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:35:50,131 - INFO - __main__ : 294 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:35:50,131 - INFO - __main__ : 294 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:35:55,245 - INFO - __main__ : 311 - ExecuteFunction (functionId: 3)
+2023-08-17 13:46:09,666 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:46:09,675 - INFO - __main__ : 379 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:46:09,696 - INFO - __main__ : 270 - GetCapabilities
+2023-08-17 13:46:09,696 - INFO - __main__ : 295 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:46:09,700 - INFO - __main__ : 295 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:46:09,700 - INFO - __main__ : 295 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:46:09,700 - INFO - __main__ : 295 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:46:14,846 - INFO - __main__ : 312 - ExecuteFunction (functionId: 3)
+2023-08-17 13:51:18,170 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 13:51:18,177 - INFO - __main__ : 380 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 13:51:37,825 - INFO - __main__ : 271 - GetCapabilities
+2023-08-17 13:51:37,827 - INFO - __main__ : 296 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 13:51:37,828 - INFO - __main__ : 296 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 13:51:37,833 - INFO - __main__ : 296 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 13:51:37,835 - INFO - __main__ : 296 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 13:52:07,803 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-17 13:54:02,284 - INFO - __main__ : 313 - ExecuteFunction (functionId: 1)
+2023-08-17 14:00:14,254 - INFO - __main__ : 45 - Logging enabled
+2023-08-17 14:00:14,264 - INFO - __main__ : 380 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:00:24,591 - INFO - __main__ : 271 - GetCapabilities
+2023-08-17 14:00:24,593 - INFO - __main__ : 296 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:00:24,594 - INFO - __main__ : 296 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:00:24,595 - INFO - __main__ : 296 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:00:24,596 - INFO - __main__ : 296 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:00:29,365 - INFO - __main__ : 313 - ExecuteFunction (functionId: 1)
+2023-08-17 14:00:33,917 - INFO - __main__ : 271 - GetCapabilities
+2023-08-17 14:00:33,919 - INFO - __main__ : 296 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:00:33,920 - INFO - __main__ : 296 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:00:33,921 - INFO - __main__ : 296 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:00:33,921 - INFO - __main__ : 296 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:00:39,701 - INFO - __main__ : 313 - ExecuteFunction (functionId: 3)
+2023-08-17 14:11:49,625 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:11:49,634 - INFO - __main__ : 391 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:11:50,078 - INFO - __main__ : 282 - GetCapabilities
+2023-08-17 14:11:50,078 - INFO - __main__ : 307 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:11:50,078 - INFO - __main__ : 307 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:11:50,085 - INFO - __main__ : 307 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:11:50,086 - INFO - __main__ : 307 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:11:53,843 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:12:56,095 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:12:56,103 - INFO - __main__ : 391 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:12:56,267 - INFO - __main__ : 282 - GetCapabilities
+2023-08-17 14:12:56,267 - INFO - __main__ : 307 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:12:56,267 - INFO - __main__ : 307 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:12:56,267 - INFO - __main__ : 307 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:12:56,267 - INFO - __main__ : 307 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:12:59,956 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:13:18,281 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:13:49,336 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:17:46,704 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:17:46,717 - INFO - __main__ : 391 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:18:02,561 - INFO - __main__ : 282 - GetCapabilities
+2023-08-17 14:18:02,563 - INFO - __main__ : 307 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:18:02,565 - INFO - __main__ : 307 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:18:02,567 - INFO - __main__ : 307 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:18:02,567 - INFO - __main__ : 307 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:18:19,540 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:24:02,927 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:24:02,946 - INFO - __main__ : 391 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:24:03,129 - INFO - __main__ : 282 - GetCapabilities
+2023-08-17 14:24:03,134 - INFO - __main__ : 307 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:24:03,135 - INFO - __main__ : 307 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:24:03,136 - INFO - __main__ : 307 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:24:03,136 - INFO - __main__ : 307 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:24:04,289 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:24:04,505 - ERROR - _server : 471 - Exception iterating responses: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 176, in _random_forest
+    learn.fit_one_cycle()
+TypeError: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+2023-08-17 14:24:04,516 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:24:04,660 - ERROR - _server : 471 - Exception iterating responses: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 176, in _random_forest
+    learn.fit_one_cycle()
+TypeError: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+2023-08-17 14:24:04,700 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:24:04,773 - ERROR - _server : 471 - Exception iterating responses: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 176, in _random_forest
+    learn.fit_one_cycle()
+TypeError: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+2023-08-17 14:24:04,776 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:24:04,843 - ERROR - _server : 471 - Exception iterating responses: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 176, in _random_forest
+    learn.fit_one_cycle()
+TypeError: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+2023-08-17 14:24:04,847 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:24:04,909 - ERROR - _server : 471 - Exception iterating responses: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 176, in _random_forest
+    learn.fit_one_cycle()
+TypeError: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+2023-08-17 14:24:04,912 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:24:05,024 - ERROR - _server : 471 - Exception iterating responses: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 176, in _random_forest
+    learn.fit_one_cycle()
+TypeError: fit_one_cycle() missing 1 required positional argument: 'n_epoch'
+2023-08-17 14:24:30,089 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:24:30,097 - INFO - __main__ : 391 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:24:34,116 - INFO - __main__ : 282 - GetCapabilities
+2023-08-17 14:24:34,116 - INFO - __main__ : 307 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:24:34,116 - INFO - __main__ : 307 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:24:34,116 - INFO - __main__ : 307 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:24:34,116 - INFO - __main__ : 307 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:24:35,375 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:32:28,698 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:32:28,704 - INFO - __main__ : 391 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:32:28,989 - INFO - __main__ : 282 - GetCapabilities
+2023-08-17 14:32:28,989 - INFO - __main__ : 307 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:32:28,989 - INFO - __main__ : 307 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:32:28,993 - INFO - __main__ : 307 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:32:28,994 - INFO - __main__ : 307 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:32:37,133 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:32:37,188 - ERROR - _server : 471 - Exception iterating responses: 'Cabin'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Cabin'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 243, in setups
+    store_attr(classes={n:CategoryMap(to.iloc[:,n].items, add_na=(n in to.cat_names)) for n in to.cat_names}, but='to')
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 243, in <dictcomp>
+    store_attr(classes={n:CategoryMap(to.iloc[:,n].items, add_na=(n in to.cat_names)) for n in to.cat_names}, but='to')
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Cabin'
+2023-08-17 14:32:37,196 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:32:37,227 - ERROR - _server : 471 - Exception iterating responses: 'Cabin'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Cabin'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 243, in setups
+    store_attr(classes={n:CategoryMap(to.iloc[:,n].items, add_na=(n in to.cat_names)) for n in to.cat_names}, but='to')
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 243, in <dictcomp>
+    store_attr(classes={n:CategoryMap(to.iloc[:,n].items, add_na=(n in to.cat_names)) for n in to.cat_names}, but='to')
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Cabin'
+2023-08-17 14:32:37,262 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:32:37,310 - ERROR - _server : 471 - Exception iterating responses: 'Cabin'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Cabin'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 243, in setups
+    store_attr(classes={n:CategoryMap(to.iloc[:,n].items, add_na=(n in to.cat_names)) for n in to.cat_names}, but='to')
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 243, in <dictcomp>
+    store_attr(classes={n:CategoryMap(to.iloc[:,n].items, add_na=(n in to.cat_names)) for n in to.cat_names}, but='to')
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Cabin'
+2023-08-17 14:32:37,317 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:32:37,385 - ERROR - _server : 471 - Exception iterating responses: 'Cabin'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Cabin'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 164, in _random_forest
+    to = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 168, in __init__
+    if do_setup: self.setup()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 179, in setup
+    def setup(self): self.procs.setup(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 200, in setup
+    for t in tfms: self.add(t,items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 204, in add
+    for t in ts: t.setup(items, train_setup)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 224, in setup
+    super().setup(getattr(items,'train',items), train_setup=False)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 87, in setup
+    return self.setups(getattr(items, 'train', items) if train_setup else items)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 243, in setups
+    store_attr(classes={n:CategoryMap(to.iloc[:,n].items, add_na=(n in to.cat_names)) for n in to.cat_names}, but='to')
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 243, in <dictcomp>
+    store_attr(classes={n:CategoryMap(to.iloc[:,n].items, add_na=(n in to.cat_names)) for n in to.cat_names}, but='to')
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 139, in __getitem__
+    cols = df.columns.isin(cols) if is_listy(cols) else df.columns.get_loc(cols)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Cabin'
+2023-08-17 14:33:40,484 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:33:40,494 - INFO - __main__ : 391 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:33:47,233 - INFO - __main__ : 282 - GetCapabilities
+2023-08-17 14:33:47,234 - INFO - __main__ : 307 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:33:47,237 - INFO - __main__ : 307 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:33:47,239 - INFO - __main__ : 307 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:33:47,240 - INFO - __main__ : 307 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:33:51,714 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:34:18,829 - INFO - __main__ : 324 - ExecuteFunction (functionId: 3)
+2023-08-17 14:35:40,241 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:35:40,247 - INFO - __main__ : 397 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:35:40,699 - INFO - __main__ : 288 - GetCapabilities
+2023-08-17 14:35:40,701 - INFO - __main__ : 313 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:35:40,701 - INFO - __main__ : 313 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:35:40,702 - INFO - __main__ : 313 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:35:40,703 - INFO - __main__ : 313 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:35:42,924 - INFO - __main__ : 330 - ExecuteFunction (functionId: 3)
+2023-08-17 14:36:02,831 - INFO - __main__ : 330 - ExecuteFunction (functionId: 3)
+2023-08-17 14:39:58,024 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 14:39:58,030 - INFO - __main__ : 398 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 14:40:03,529 - INFO - __main__ : 289 - GetCapabilities
+2023-08-17 14:40:03,531 - INFO - __main__ : 314 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 14:40:03,531 - INFO - __main__ : 314 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 14:40:03,534 - INFO - __main__ : 314 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 14:40:03,535 - INFO - __main__ : 314 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 14:40:08,914 - INFO - __main__ : 331 - ExecuteFunction (functionId: 3)
+2023-08-17 14:40:09,810 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 14:40:09,816 - INFO - __main__ : 331 - ExecuteFunction (functionId: 3)
+2023-08-17 14:40:10,579 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 14:40:10,584 - INFO - __main__ : 331 - ExecuteFunction (functionId: 3)
+2023-08-17 14:40:11,375 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 14:40:11,377 - INFO - __main__ : 331 - ExecuteFunction (functionId: 3)
+2023-08-17 14:40:12,236 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:15:14,522 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 15:15:14,530 - INFO - __main__ : 401 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 15:15:14,668 - INFO - __main__ : 292 - GetCapabilities
+2023-08-17 15:15:14,670 - INFO - __main__ : 317 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 15:15:14,671 - INFO - __main__ : 317 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 15:15:14,672 - INFO - __main__ : 317 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 15:15:14,673 - INFO - __main__ : 317 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 15:15:19,169 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:15:20,188 - ERROR - _server : 471 - Exception iterating responses: 'function' object has no attribute 'columns'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    test_df.transform(test_df.items.columns, f)
+AttributeError: 'function' object has no attribute 'columns'
+2023-08-17 15:15:20,190 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:15:21,136 - ERROR - _server : 471 - Exception iterating responses: 'function' object has no attribute 'columns'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    test_df.transform(test_df.items.columns, f)
+AttributeError: 'function' object has no attribute 'columns'
+2023-08-17 15:15:21,141 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:15:22,153 - ERROR - _server : 471 - Exception iterating responses: 'function' object has no attribute 'columns'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    test_df.transform(test_df.items.columns, f)
+AttributeError: 'function' object has no attribute 'columns'
+2023-08-17 15:15:22,155 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:15:23,089 - ERROR - _server : 471 - Exception iterating responses: 'function' object has no attribute 'columns'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    test_df.transform(test_df.items.columns, f)
+AttributeError: 'function' object has no attribute 'columns'
+2023-08-17 15:16:04,685 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 15:16:04,703 - INFO - __main__ : 401 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 15:16:04,838 - INFO - __main__ : 292 - GetCapabilities
+2023-08-17 15:16:04,839 - INFO - __main__ : 317 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 15:16:04,840 - INFO - __main__ : 317 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 15:16:04,840 - INFO - __main__ : 317 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 15:16:04,841 - INFO - __main__ : 317 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 15:16:07,855 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:16:08,904 - ERROR - _server : 471 - Exception iterating responses: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 550, in _get_axis_number
+    return cls._AXIS_TO_AXIS_NUMBER[axis]
+KeyError: <class 'fastai.tabular.core.FillMissing'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    test_df.transform(test_df.columns, f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 8677, in transform
+    op = frame_apply(self, func=func, axis=axis, args=args, kwargs=kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\apply.py", line 88, in frame_apply
+    axis = obj._get_axis_number(axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 552, in _get_axis_number
+    raise ValueError(f"No axis named {axis} for object type {cls.__name__}")
+ValueError: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+2023-08-17 15:16:08,919 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:16:09,960 - ERROR - _server : 471 - Exception iterating responses: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 550, in _get_axis_number
+    return cls._AXIS_TO_AXIS_NUMBER[axis]
+KeyError: <class 'fastai.tabular.core.FillMissing'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    test_df.transform(test_df.columns, f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 8677, in transform
+    op = frame_apply(self, func=func, axis=axis, args=args, kwargs=kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\apply.py", line 88, in frame_apply
+    axis = obj._get_axis_number(axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 552, in _get_axis_number
+    raise ValueError(f"No axis named {axis} for object type {cls.__name__}")
+ValueError: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+2023-08-17 15:16:09,966 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:16:10,922 - ERROR - _server : 471 - Exception iterating responses: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 550, in _get_axis_number
+    return cls._AXIS_TO_AXIS_NUMBER[axis]
+KeyError: <class 'fastai.tabular.core.FillMissing'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    test_df.transform(test_df.columns, f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 8677, in transform
+    op = frame_apply(self, func=func, axis=axis, args=args, kwargs=kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\apply.py", line 88, in frame_apply
+    axis = obj._get_axis_number(axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 552, in _get_axis_number
+    raise ValueError(f"No axis named {axis} for object type {cls.__name__}")
+ValueError: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+2023-08-17 15:16:10,924 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:16:11,913 - ERROR - _server : 471 - Exception iterating responses: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 550, in _get_axis_number
+    return cls._AXIS_TO_AXIS_NUMBER[axis]
+KeyError: <class 'fastai.tabular.core.FillMissing'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    test_df.transform(test_df.columns, f)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 8677, in transform
+    op = frame_apply(self, func=func, axis=axis, args=args, kwargs=kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\apply.py", line 88, in frame_apply
+    axis = obj._get_axis_number(axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 552, in _get_axis_number
+    raise ValueError(f"No axis named {axis} for object type {cls.__name__}")
+ValueError: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+2023-08-17 15:45:02,149 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:45:03,169 - ERROR - _server : 471 - Exception iterating responses: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 550, in _get_axis_number
+    return cls._AXIS_TO_AXIS_NUMBER[axis]
+KeyError: <class 'fastai.tabular.core.FillMissing'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    to2 = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 8677, in transform
+    op = frame_apply(self, func=func, axis=axis, args=args, kwargs=kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\apply.py", line 88, in frame_apply
+    axis = obj._get_axis_number(axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 552, in _get_axis_number
+    raise ValueError(f"No axis named {axis} for object type {cls.__name__}")
+ValueError: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+2023-08-17 15:45:03,185 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:45:04,154 - ERROR - _server : 471 - Exception iterating responses: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 550, in _get_axis_number
+    return cls._AXIS_TO_AXIS_NUMBER[axis]
+KeyError: <class 'fastai.tabular.core.FillMissing'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    to2 = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 8677, in transform
+    op = frame_apply(self, func=func, axis=axis, args=args, kwargs=kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\apply.py", line 88, in frame_apply
+    axis = obj._get_axis_number(axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 552, in _get_axis_number
+    raise ValueError(f"No axis named {axis} for object type {cls.__name__}")
+ValueError: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+2023-08-17 15:45:04,154 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:45:04,972 - ERROR - _server : 471 - Exception iterating responses: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 550, in _get_axis_number
+    return cls._AXIS_TO_AXIS_NUMBER[axis]
+KeyError: <class 'fastai.tabular.core.FillMissing'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    to2 = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 8677, in transform
+    op = frame_apply(self, func=func, axis=axis, args=args, kwargs=kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\apply.py", line 88, in frame_apply
+    axis = obj._get_axis_number(axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 552, in _get_axis_number
+    raise ValueError(f"No axis named {axis} for object type {cls.__name__}")
+ValueError: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+2023-08-17 15:45:04,972 - INFO - __main__ : 334 - ExecuteFunction (functionId: 3)
+2023-08-17 15:45:05,884 - ERROR - _server : 471 - Exception iterating responses: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 550, in _get_axis_number
+    return cls._AXIS_TO_AXIS_NUMBER[axis]
+KeyError: <class 'fastai.tabular.core.FillMissing'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    to2 = TabularPandas(
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\frame.py", line 8677, in transform
+    op = frame_apply(self, func=func, axis=axis, args=args, kwargs=kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\apply.py", line 88, in frame_apply
+    axis = obj._get_axis_number(axis)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\core\generic.py", line 552, in _get_axis_number
+    raise ValueError(f"No axis named {axis} for object type {cls.__name__}")
+ValueError: No axis named <class 'fastai.tabular.core.FillMissing'> for object type DataFrame
+2023-08-17 15:46:01,771 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 15:46:01,781 - INFO - __main__ : 407 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 15:46:01,942 - INFO - __main__ : 298 - GetCapabilities
+2023-08-17 15:46:01,982 - INFO - __main__ : 323 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 15:46:01,982 - INFO - __main__ : 323 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 15:46:01,982 - INFO - __main__ : 323 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 15:46:01,990 - INFO - __main__ : 323 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 15:46:04,221 - INFO - __main__ : 340 - ExecuteFunction (functionId: 3)
+2023-08-17 15:46:05,123 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:46:05,131 - INFO - __main__ : 340 - ExecuteFunction (functionId: 3)
+2023-08-17 15:46:06,031 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:46:06,055 - INFO - __main__ : 340 - ExecuteFunction (functionId: 3)
+2023-08-17 15:46:07,133 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:46:07,139 - INFO - __main__ : 340 - ExecuteFunction (functionId: 3)
+2023-08-17 15:46:08,027 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:46:08,031 - INFO - __main__ : 340 - ExecuteFunction (functionId: 3)
+2023-08-17 15:46:08,923 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:46:08,930 - INFO - __main__ : 340 - ExecuteFunction (functionId: 3)
+2023-08-17 15:46:09,765 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 189, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:48:46,425 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 15:48:46,431 - INFO - __main__ : 408 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 15:48:46,500 - INFO - __main__ : 299 - GetCapabilities
+2023-08-17 15:48:46,502 - INFO - __main__ : 324 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 15:48:46,502 - INFO - __main__ : 324 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 15:48:46,502 - INFO - __main__ : 324 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 15:48:46,502 - INFO - __main__ : 324 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 15:48:47,213 - INFO - __main__ : 341 - ExecuteFunction (functionId: 3)
+2023-08-17 15:48:48,103 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:48:48,109 - INFO - __main__ : 341 - ExecuteFunction (functionId: 3)
+2023-08-17 15:48:48,970 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:48:49,001 - INFO - __main__ : 341 - ExecuteFunction (functionId: 3)
+2023-08-17 15:48:50,042 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:48:50,044 - INFO - __main__ : 341 - ExecuteFunction (functionId: 3)
+2023-08-17 15:48:50,961 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:48:50,971 - INFO - __main__ : 341 - ExecuteFunction (functionId: 3)
+2023-08-17 15:48:51,956 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:48:51,960 - INFO - __main__ : 341 - ExecuteFunction (functionId: 3)
+2023-08-17 15:48:52,805 - ERROR - _server : 471 - Exception iterating responses: nan values in `Fare` but not in setup training set
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 190, in _random_forest
+    dl = learn.dls.test_dl(test_df)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\data.py", line 54, in test_dl
+    if process: to.process()
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 180, in process
+    def process(self): self.procs(self)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 208, in __call__
+    def __call__(self, o): return compose_tfms(o, tfms=self.fs, split_idx=self.split_idx)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 158, in compose_tfms
+    x = f(x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 81, in __call__
+    def __call__(self, x, **kwargs): return self._call('encodes', x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 107, in _call
+    super()._call(fn,x,split_idx,**kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 91, in _call
+    return self._do_call(getattr(self, fn), x, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\transform.py", line 97, in _do_call
+    return retain_type(f(x, **kwargs), x, ret)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastcore\dispatch.py", line 120, in __call__
+    return f(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\fastai\tabular\core.py", line 310, in encodes
+    assert n in self.na_dict, f"nan values in `{n}` but not in setup training set"
+AssertionError: nan values in `Fare` but not in setup training set
+2023-08-17 15:51:39,661 - INFO - __main__ : 46 - Logging enabled
+2023-08-17 15:51:39,671 - INFO - __main__ : 408 - *** Running server in insecure mode on port: 50052 ***
+2023-08-17 15:51:40,152 - INFO - __main__ : 299 - GetCapabilities
+2023-08-17 15:51:40,152 - INFO - __main__ : 324 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-17 15:51:40,152 - INFO - __main__ : 324 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-17 15:51:40,152 - INFO - __main__ : 324 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-17 15:51:40,152 - INFO - __main__ : 324 - Adding to capabilities: RandomForest(['col1'])
+2023-08-17 15:51:45,264 - INFO - __main__ : 341 - ExecuteFunction (functionId: 3)

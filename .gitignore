@@ -1,0 +1,9 @@
+.bloop/*
+Other/DataDashboard/codebase/target/**
+**/src/main/scala/target/**
+**/src/main/scala/project/**
+Other/DataDashboard/codebase/project/**
+.bsp
+Other/DataDashboard/codebase/.idea/
+.vscode/**
+Other/DataDashboard/codebase/null/

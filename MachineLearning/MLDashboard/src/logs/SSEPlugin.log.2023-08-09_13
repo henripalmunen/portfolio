@@ -1,0 +1,499 @@
+2023-08-09 12:43:53,736 - INFO - __main__ : 39 - Logging enabled
+2023-08-09 12:43:53,768 - INFO - __main__ : 279 - *** Running server in insecure mode on port: 50052 ***
+2023-08-09 12:43:59,569 - INFO - __main__ : 183 - GetCapabilities
+2023-08-09 12:43:59,608 - INFO - __main__ : 206 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 12:43:59,608 - INFO - __main__ : 206 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 12:43:59,608 - INFO - __main__ : 206 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 12:44:04,622 - INFO - __main__ : 220 - ExecuteFunction (functionId: 1)
+2023-08-09 12:44:28,550 - INFO - __main__ : 183 - GetCapabilities
+2023-08-09 12:44:28,550 - INFO - __main__ : 206 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 12:44:28,550 - INFO - __main__ : 206 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 12:44:28,550 - INFO - __main__ : 206 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 12:46:23,199 - INFO - __main__ : 220 - ExecuteFunction (functionId: 1)
+2023-08-09 12:47:37,951 - INFO - __main__ : 39 - Logging enabled
+2023-08-09 12:47:37,959 - INFO - __main__ : 313 - *** Running server in insecure mode on port: 50052 ***
+2023-08-09 12:48:17,180 - INFO - __main__ : 217 - GetCapabilities
+2023-08-09 12:48:17,180 - ERROR - _server : 453 - Exception calling application: Expecting value: line 42 column 3 (char 644)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "__main__.py", line 229, in GetCapabilities
+    for definition in json.load(json_file)['Functions']:
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 42 column 3 (char 644)
+2023-08-09 12:48:37,207 - INFO - __main__ : 217 - GetCapabilities
+2023-08-09 12:48:37,208 - ERROR - _server : 453 - Exception calling application: Expecting value: line 42 column 3 (char 644)
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "__main__.py", line 229, in GetCapabilities
+    for definition in json.load(json_file)['Functions']:
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 42 column 3 (char 644)
+2023-08-09 12:49:17,221 - INFO - __main__ : 217 - GetCapabilities
+2023-08-09 12:49:17,222 - INFO - __main__ : 240 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 12:49:17,222 - INFO - __main__ : 240 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 12:49:17,225 - INFO - __main__ : 240 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 12:49:17,226 - INFO - __main__ : 240 - Adding to capabilities: RandomForest(['col1', 'col2'])
+2023-08-09 12:49:39,050 - INFO - __main__ : 39 - Logging enabled
+2023-08-09 12:49:39,066 - INFO - __main__ : 313 - *** Running server in insecure mode on port: 50052 ***
+2023-08-09 12:49:42,280 - INFO - __main__ : 217 - GetCapabilities
+2023-08-09 12:49:42,280 - INFO - __main__ : 240 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 12:49:42,280 - INFO - __main__ : 240 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 12:49:42,280 - INFO - __main__ : 240 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 12:49:42,280 - INFO - __main__ : 240 - Adding to capabilities: RandomForest(['col1', 'col2'])
+2023-08-09 12:49:44,521 - INFO - __main__ : 254 - ExecuteFunction (functionId: 3)
+2023-08-09 12:50:06,615 - INFO - __main__ : 254 - ExecuteFunction (functionId: 3)
+2023-08-09 12:52:43,292 - INFO - __main__ : 254 - ExecuteFunction (functionId: 3)
+2023-08-09 12:55:56,318 - INFO - __main__ : 39 - Logging enabled
+2023-08-09 12:55:56,326 - INFO - __main__ : 317 - *** Running server in insecure mode on port: 50052 ***
+2023-08-09 12:55:57,417 - INFO - __main__ : 221 - GetCapabilities
+2023-08-09 12:55:57,417 - INFO - __main__ : 244 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 12:55:57,418 - INFO - __main__ : 244 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 12:55:57,418 - INFO - __main__ : 244 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 12:55:57,418 - INFO - __main__ : 244 - Adding to capabilities: RandomForest(['col1', 'col2'])
+2023-08-09 12:55:59,465 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:55:59,466 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:55:59,470 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:55:59,471 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:55:59,493 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:55:59,493 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:55:59,496 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:55:59,499 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:56:00,986 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:56:00,986 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:56:00,988 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:56:00,989 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:59:05,186 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:59:26,121 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:59:26,125 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:59:26,127 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:59:26,132 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:59:26,133 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 12:59:26,138 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 12:59:26,139 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:01:07,664 - INFO - __main__ : 39 - Logging enabled
+2023-08-09 13:01:07,685 - INFO - __main__ : 317 - *** Running server in insecure mode on port: 50052 ***
+2023-08-09 13:01:38,543 - INFO - __main__ : 221 - GetCapabilities
+2023-08-09 13:01:48,945 - INFO - __main__ : 221 - GetCapabilities
+2023-08-09 13:01:55,417 - INFO - __main__ : 244 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 13:01:55,419 - INFO - __main__ : 244 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 13:01:55,421 - INFO - __main__ : 244 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 13:01:55,422 - INFO - __main__ : 244 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 13:01:55,423 - INFO - __main__ : 244 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 13:01:55,424 - INFO - __main__ : 244 - Adding to capabilities: RandomForest(['col1'])
+2023-08-09 13:01:55,424 - INFO - __main__ : 244 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 13:01:55,426 - INFO - __main__ : 244 - Adding to capabilities: RandomForest(['col1'])
+2023-08-09 13:01:57,320 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:01:57,321 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:01:57,327 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:01:57,329 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:01:57,345 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:01:57,345 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:01:57,348 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:01:57,349 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:01:57,890 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:01:57,891 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:01:57,896 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:01:57,898 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:01:57,924 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:01:57,924 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:01:57,928 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:01:57,928 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:05,427 - INFO - __main__ : 39 - Logging enabled
+2023-08-09 13:02:05,451 - INFO - __main__ : 317 - *** Running server in insecure mode on port: 50052 ***
+2023-08-09 13:02:08,336 - INFO - __main__ : 221 - GetCapabilities
+2023-08-09 13:02:08,337 - INFO - __main__ : 244 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 13:02:08,337 - INFO - __main__ : 244 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 13:02:08,339 - INFO - __main__ : 244 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 13:02:08,339 - INFO - __main__ : 244 - Adding to capabilities: RandomForest(['col1'])
+2023-08-09 13:02:11,722 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:11,724 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:11,734 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:11,735 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:11,774 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:11,775 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:11,781 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:11,782 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:13,397 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:13,397 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:13,400 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:13,400 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:19,047 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:19,048 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:19,056 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:19,058 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:19,066 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:19,067 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:19,077 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:19,079 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:24,640 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:24,641 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:24,642 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:24,642 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:39,584 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:39,585 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:39,591 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:39,592 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:39,598 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:39,599 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:39,605 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:39,606 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:45,496 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:45,496 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:45,497 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:45,498 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:47,940 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:47,940 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:47,946 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:47,946 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:47,948 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:47,948 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:47,949 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:47,950 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:50,742 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:50,742 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:50,744 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:50,745 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:56,124 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:56,125 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:56,129 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:56,129 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:56,131 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:56,132 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:02:56,133 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:02:56,133 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:03:01,189 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:03:01,189 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:03:01,195 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:03:01,196 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:04:03,896 - INFO - __main__ : 258 - ExecuteFunction (functionId: 1)
+2023-08-09 13:04:50,151 - INFO - __main__ : 258 - ExecuteFunction (functionId: 1)
+2023-08-09 13:04:54,538 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:04:54,538 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:04:54,544 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:04:54,545 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:04:54,551 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:04:54,553 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:04:54,558 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:04:54,563 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:05:03,192 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:05:03,193 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:05:03,199 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:05:03,200 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:05:03,207 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:05:03,209 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:05:03,215 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:05:03,215 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:06:34,701 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:06:34,701 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:06:34,704 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:06:34,704 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:06:34,707 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:06:34,707 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:06:34,713 - INFO - __main__ : 258 - ExecuteFunction (functionId: 3)
+2023-08-09 13:06:34,713 - ERROR - _server : 471 - Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+TypeError: 'NoneType' object is not an iterator
+2023-08-09 13:07:10,738 - INFO - __main__ : 258 - ExecuteFunction (functionId: 1)
+2023-08-09 13:08:58,151 - INFO - __main__ : 39 - Logging enabled
+2023-08-09 13:08:58,165 - INFO - __main__ : 316 - *** Running server in insecure mode on port: 50052 ***
+2023-08-09 13:09:02,273 - INFO - __main__ : 220 - GetCapabilities
+2023-08-09 13:09:02,274 - INFO - __main__ : 243 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 13:09:02,274 - INFO - __main__ : 243 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 13:09:02,276 - INFO - __main__ : 243 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 13:09:02,276 - INFO - __main__ : 243 - Adding to capabilities: RandomForest(['col1'])
+2023-08-09 13:09:06,177 - INFO - __main__ : 257 - ExecuteFunction (functionId: 1)
+2023-08-09 13:09:08,148 - INFO - __main__ : 257 - ExecuteFunction (functionId: 3)
+2023-08-09 13:09:08,149 - ERROR - _server : 471 - Exception iterating responses: Protocol message Dual has no "textData" field.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 105, in _random_forest
+    yield SSE.BundledRows(rows=[SSE.Row(duals=iter([SSE.Dual(textData='bruh')]))])
+ValueError: Protocol message Dual has no "textData" field.
+2023-08-09 13:09:08,159 - INFO - __main__ : 257 - ExecuteFunction (functionId: 3)
+2023-08-09 13:09:08,161 - ERROR - _server : 471 - Exception iterating responses: Protocol message Dual has no "textData" field.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 105, in _random_forest
+    yield SSE.BundledRows(rows=[SSE.Row(duals=iter([SSE.Dual(textData='bruh')]))])
+ValueError: Protocol message Dual has no "textData" field.
+2023-08-09 13:09:08,204 - INFO - __main__ : 257 - ExecuteFunction (functionId: 3)
+2023-08-09 13:09:08,205 - ERROR - _server : 471 - Exception iterating responses: Protocol message Dual has no "textData" field.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 105, in _random_forest
+    yield SSE.BundledRows(rows=[SSE.Row(duals=iter([SSE.Dual(textData='bruh')]))])
+ValueError: Protocol message Dual has no "textData" field.
+2023-08-09 13:09:08,215 - INFO - __main__ : 257 - ExecuteFunction (functionId: 3)
+2023-08-09 13:09:08,216 - ERROR - _server : 471 - Exception iterating responses: Protocol message Dual has no "textData" field.
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 105, in _random_forest
+    yield SSE.BundledRows(rows=[SSE.Row(duals=iter([SSE.Dual(textData='bruh')]))])
+ValueError: Protocol message Dual has no "textData" field.
+2023-08-09 13:09:57,385 - INFO - __main__ : 39 - Logging enabled
+2023-08-09 13:09:57,403 - INFO - __main__ : 316 - *** Running server in insecure mode on port: 50052 ***
+2023-08-09 13:09:59,660 - INFO - __main__ : 220 - GetCapabilities
+2023-08-09 13:09:59,661 - INFO - __main__ : 243 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-09 13:09:59,662 - INFO - __main__ : 243 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-09 13:09:59,664 - INFO - __main__ : 243 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-09 13:09:59,664 - INFO - __main__ : 243 - Adding to capabilities: RandomForest(['col1'])
+2023-08-09 13:10:01,663 - INFO - __main__ : 257 - ExecuteFunction (functionId: 1)
+2023-08-09 13:10:02,909 - INFO - __main__ : 257 - ExecuteFunction (functionId: 3)

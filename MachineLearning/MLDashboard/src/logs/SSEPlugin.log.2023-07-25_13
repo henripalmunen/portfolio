@@ -1,0 +1,20 @@
+2023-07-25 13:08:25,173 - INFO - __main__ : 39 - Logging enabled
+2023-07-25 13:08:25,173 - INFO - __main__ : 276 - *** Running server in insecure mode on port: 50052 ***
+2023-07-25 13:08:28,620 - INFO - __main__ : 180 - GetCapabilities
+2023-07-25 13:08:28,620 - INFO - __main__ : 203 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-07-25 13:08:28,620 - INFO - __main__ : 203 - Adding to capabilities: SumOfColumn(['col1'])
+2023-07-25 13:08:28,620 - INFO - __main__ : 203 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-07-25 13:08:30,494 - INFO - __main__ : 217 - ExecuteFunction (functionId: 1)
+2023-07-25 13:13:15,783 - INFO - __main__ : 39 - Logging enabled
+2023-07-25 13:13:15,788 - INFO - __main__ : 276 - *** Running server in insecure mode on port: 50052 ***
+2023-07-25 13:14:19,538 - INFO - __main__ : 180 - GetCapabilities
+2023-07-25 13:14:19,539 - INFO - __main__ : 203 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-07-25 13:14:19,539 - INFO - __main__ : 203 - Adding to capabilities: SumOfColumn(['col1'])
+2023-07-25 13:14:19,540 - INFO - __main__ : 203 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-07-25 13:23:59,868 - INFO - __main__ : 217 - ExecuteFunction (functionId: 1)
+2023-07-25 13:28:31,833 - INFO - __main__ : 180 - GetCapabilities
+2023-07-25 13:28:31,833 - INFO - __main__ : 203 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-07-25 13:28:31,834 - INFO - __main__ : 203 - Adding to capabilities: SumOfColumn(['col1'])
+2023-07-25 13:28:31,835 - INFO - __main__ : 203 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-07-25 13:28:34,154 - INFO - __main__ : 217 - ExecuteFunction (functionId: 1)
+2023-07-25 13:28:45,073 - INFO - __main__ : 217 - ExecuteFunction (functionId: 1)

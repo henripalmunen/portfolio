@@ -1,0 +1,10 @@
+2023-08-15 13:43:07,000 - INFO - __main__ : 41 - Logging enabled
+2023-08-15 13:43:07,010 - INFO - __main__ : 323 - *** Running server in insecure mode on port: 50052 ***
+2023-08-15 14:15:48,028 - INFO - __main__ : 41 - Logging enabled
+2023-08-15 14:15:48,035 - INFO - __main__ : 323 - *** Running server in insecure mode on port: 50052 ***
+2023-08-15 14:15:49,029 - INFO - __main__ : 227 - GetCapabilities
+2023-08-15 14:15:49,045 - INFO - __main__ : 250 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-15 14:15:49,046 - INFO - __main__ : 250 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-15 14:15:49,046 - INFO - __main__ : 250 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-15 14:15:49,047 - INFO - __main__ : 250 - Adding to capabilities: RandomForest(['col1'])
+2023-08-15 14:15:52,367 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)

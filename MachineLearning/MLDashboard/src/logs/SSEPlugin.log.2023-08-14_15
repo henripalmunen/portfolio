@@ -1,0 +1,867 @@
+2023-08-14 15:20:47,306 - INFO - __main__ : 41 - Logging enabled
+2023-08-14 15:20:47,381 - INFO - __main__ : 326 - *** Running server in insecure mode on port: 50052 ***
+2023-08-14 15:21:02,984 - INFO - __main__ : 230 - GetCapabilities
+2023-08-14 15:21:03,026 - INFO - __main__ : 253 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-14 15:21:03,028 - INFO - __main__ : 253 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-14 15:21:03,029 - INFO - __main__ : 253 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-14 15:21:03,031 - INFO - __main__ : 253 - Adding to capabilities: RandomForest(['col1'])
+2023-08-14 15:21:22,648 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,656 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:21:22,673 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,680 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:21:22,772 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,792 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:21:22,793 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,813 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,821 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:21:22,826 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:21:22,831 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,843 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:21:22,844 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,857 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,859 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:21:22,861 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:21:22,868 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,869 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,881 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:21:22,884 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:21:22,969 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,971 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:21:22,977 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:22,979 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:21:43,221 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:43,232 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:21:43,234 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:21:43,240 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:22:47,725 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,726 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,741 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:47,742 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:22:47,744 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,745 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,750 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:47,750 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:22:47,752 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,754 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,758 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:47,759 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:22:47,761 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,762 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,774 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:47,774 - ERROR - _server : 471 - Exception iterating responses: [Errno 2] No such file or directory: '[Cexport.csv'
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 123, in _random_forest
+    exportCSV = pd.read_csv(exportPath)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '[Cexport.csv'
+2023-08-14 15:22:47,777 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,788 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:47,793 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,793 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:47,796 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,800 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:47,802 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:47,812 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:52,541 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,543 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,546 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:52,559 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,579 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:52,591 - ERROR - _server : 471 - Exception iterating responses: name 'result' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    duals = iter([SSE.Dual(numData=result)])
+NameError: name 'result' is not defined
+2023-08-14 15:22:52,597 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,601 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,603 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:52,611 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,627 - ERROR - _server : 471 - Exception iterating responses: name 'result' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    duals = iter([SSE.Dual(numData=result)])
+NameError: name 'result' is not defined
+2023-08-14 15:22:52,627 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:52,632 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,633 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,642 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:52,653 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,658 - ERROR - _server : 471 - Exception iterating responses: name 'result' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    duals = iter([SSE.Dual(numData=result)])
+NameError: name 'result' is not defined
+2023-08-14 15:22:52,662 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,666 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:52,680 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,680 - ERROR - _server : 471 - Exception iterating responses: name 'result' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    duals = iter([SSE.Dual(numData=result)])
+NameError: name 'result' is not defined
+2023-08-14 15:22:52,683 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:52,688 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:52,693 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:22:56,235 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:56,247 - ERROR - _server : 471 - Exception iterating responses: name 'result' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    duals = iter([SSE.Dual(numData=result)])
+NameError: name 'result' is not defined
+2023-08-14 15:22:56,249 - INFO - __main__ : 267 - ExecuteFunction (functionId: 3)
+2023-08-14 15:22:56,267 - ERROR - _server : 471 - Exception iterating responses: name 'result' is not defined
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 131, in _random_forest
+    duals = iter([SSE.Dual(numData=result)])
+NameError: name 'result' is not defined
+2023-08-14 15:25:20,923 - INFO - __main__ : 41 - Logging enabled
+2023-08-14 15:25:20,933 - INFO - __main__ : 322 - *** Running server in insecure mode on port: 50052 ***
+2023-08-14 15:25:23,475 - INFO - __main__ : 226 - GetCapabilities
+2023-08-14 15:25:23,476 - INFO - __main__ : 249 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-14 15:25:23,476 - INFO - __main__ : 249 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-14 15:25:23,476 - INFO - __main__ : 249 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-14 15:25:23,476 - INFO - __main__ : 249 - Adding to capabilities: RandomForest(['col1'])
+2023-08-14 15:25:25,840 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,853 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:25,857 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,861 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:25,872 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,879 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,886 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:25,888 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,907 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:25,909 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,921 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:25,925 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,936 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:25,938 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,949 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:25,952 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:25,957 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:33,097 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,098 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,108 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:33,125 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,182 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:33,186 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,202 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:33,205 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,217 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:33,221 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,226 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:33,229 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,241 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:33,249 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,257 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:25:33,262 - INFO - __main__ : 263 - ExecuteFunction (functionId: 3)
+2023-08-14 15:25:33,263 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained more or less than 1 parameter
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 117, in _random_forest
+    raise ValueError('Parameter column contained more or less than 1 parameter')
+ValueError: Parameter column contained more or less than 1 parameter
+2023-08-14 15:30:19,846 - INFO - __main__ : 41 - Logging enabled
+2023-08-14 15:30:19,853 - INFO - __main__ : 323 - *** Running server in insecure mode on port: 50052 ***
+2023-08-14 15:30:19,914 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:30:19,926 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:30:19,940 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:30:19,960 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:30:19,966 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:30:19,982 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:30:19,986 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:30:20,013 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:30:20,018 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:30:20,042 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:30:20,046 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:30:20,072 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:30:20,077 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:30:20,096 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:30:20,100 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:30:20,115 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:00,656 - INFO - __main__ : 41 - Logging enabled
+2023-08-14 15:33:00,664 - INFO - __main__ : 323 - *** Running server in insecure mode on port: 50052 ***
+2023-08-14 15:33:03,785 - INFO - __main__ : 227 - GetCapabilities
+2023-08-14 15:33:03,786 - INFO - __main__ : 250 - Adding to capabilities: SumOfRows(['col1', 'col2'])
+2023-08-14 15:33:03,786 - INFO - __main__ : 250 - Adding to capabilities: SumOfColumn(['col1'])
+2023-08-14 15:33:03,786 - INFO - __main__ : 250 - Adding to capabilities: MaxOfColumns_2(['col1', 'col2'])
+2023-08-14 15:33:03,788 - INFO - __main__ : 250 - Adding to capabilities: RandomForest(['col1'])
+2023-08-14 15:33:07,659 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,679 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:07,682 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,694 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:07,699 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,708 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,730 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:07,733 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,745 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:07,748 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,768 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:07,770 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,783 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:07,785 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,797 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:07,798 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:07,809 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:12,730 - INFO - __main__ : 264 - ExecuteFunction (functionId: 1)
+2023-08-14 15:33:17,893 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:17,925 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:17,932 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:17,959 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:17,961 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:17,975 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:17,976 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:17,992 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:17,994 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:18,005 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:18,007 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:18,025 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:18,027 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:18,045 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:18,047 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:18,056 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:25,515 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:25,525 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:25,528 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:25,536 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:32,190 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:32,207 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:32,208 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:32,217 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:32,221 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:32,235 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:32,236 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:32,252 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:50,197 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:50,232 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:50,238 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:50,252 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:50,255 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:50,279 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
+2023-08-14 15:33:50,281 - INFO - __main__ : 264 - ExecuteFunction (functionId: 3)
+2023-08-14 15:33:50,293 - ERROR - _server : 471 - Exception iterating responses: Parameter column contained [9] parameters, exptected 1
+Traceback (most recent call last):
+  File "C:\Users\analytiikka\miniconda3\envs\mlModels\lib\site-packages\grpc\_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "__main__.py", line 118, in _random_forest
+    raise ValueError(f'Parameter column contained [{len(params)}] parameters, exptected 1')
+ValueError: Parameter column contained [9] parameters, exptected 1
